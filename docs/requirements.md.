@@ -1,0 +1,44 @@
+
+# Smart Classroom Comfort Monitor
+## Project Requirements
+
+### Project Purpose
+Develop a Raspberry Pi-based classroom temperature
+monitoring system using the C programming language.
+
+### Functional Requirements
+
+1. Allow users to enter temperatures in Fahrenheit.
+2. Accept temperatures from 68°F to 76°F as NORMAL,
+   including both endpoints.
+3. Display WARNING for temperatures below 68°F
+   or above 76°F.
+4. Calculate the average of recorded temperatures.
+5. Save temperature readings and their statuses
+   to a file.
+6. Turn ON a red LED when the temperature status
+   is WARNING.
+7. Turn OFF the red LED when the status is NORMAL.
+8. Allow the minimum and maximum acceptable
+   temperatures to be changed.
+
+### Hardware Requirements
+
+- Raspberry Pi 4B
+- Red LED
+- 1,000-ohm resistor
+- Breadboard
+- Jumper wires
+
+### Software Requirements
+
+- C programming language
+- GCC compiler
+- Raspberry Pi GPIO control library
+- GitHub for version control
+
+### Default Temperature Range
+
+Minimum: 68°F
+Maximum: 76°F
+  
