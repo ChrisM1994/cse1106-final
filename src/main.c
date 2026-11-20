@@ -38,7 +38,22 @@ int main(void)
 
                 total += temperature;
                 count++;
+FILE *statusFile = fopen("status.txt", "w");
 
+if (statusFile !=NULL)  {
+	if (temperature >=minTemp &&
+	    temperature <=maxTemp)  {
+	    fprintf(statusFile, "NORMALl\n");
+}
+else  {
+     fprintf(statusFile, "WARNING\n");
+}
+
+fclose(statusFile);
+}
+else { 
+	printf("warning: Could not update status.txt\n");
+}
                 file = fopen("data/temperature_log.csv", "a");
 
                 if (temperature >= minTemp &&
